@@ -1,0 +1,18 @@
+#result {
+	background-image: url(../assets/cocktail6.png);
+	background-repeat: space;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 50px;
+}
+
+.result__container {
+	border: 3px solid $resultColour;
+	color: $resultColour;
+}
+
+
+
+
+

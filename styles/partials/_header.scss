@@ -1,0 +1,51 @@
+header {
+	height: 100vh;
+	background-image: url(../assets/cocktail.png);
+	background-repeat: space;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__container {
+	max-width: 90%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 70px;
+	background: #fff;
+	border: 3px solid $headerColour;
+	border-radius: 20px;
+	text-align: center;
+	@include respond-to(medium) {
+		padding: 35px;
+	}
+}
+
+h1 {
+    color: $headerColour;
+    text-shadow: 2px 2px 1px #708090;
+    @include respond-to(small) {
+    	font-size: 35px;
+    }
+}
+
+button {
+	margin-top: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+	padding: 15px 30px;
+	background-color: #fff;
+	border: 1.5px solid $headerColour;
+	border-radius: 10px;
+	box-shadow: 0 2px $headerColour;
+	position: relative;
+	color: $headerColour;
+	text-shadow: 1px 1px 0.5px #708090;
+	outline: none;
+}
+
+button:hover{
+	box-shadow: 0 1px $headerColour;
+	top: 2px;
+}
+

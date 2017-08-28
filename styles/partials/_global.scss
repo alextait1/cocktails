@@ -1,0 +1,58 @@
+.wrapper {
+	margin: 0 auto;
+	width: 1170px;
+	max-width: 90%;
+}
+
+.movie,
+.icons,
+.activities,
+.desserts,
+#result {
+	height: 100vh;
+}
+
+h1,
+h2 {
+	margin: 0;
+}
+
+h1 {
+	@include heading(50px);
+	@include respond-to(medium) {
+		font-size: 45px;
+	}
+
+}
+
+h2 {
+	@include heading(35px);
+	text-shadow: 1px 1px 0.5px #708090;
+	@include respond-to(small) {
+		font-size: 30px;
+	}
+}
+
+fieldset {
+	border: 0;
+	padding: 30px 0;
+	@include respond-to(medium) {
+		width: 100%;
+	}	
+	@include respond-to(small) {
+		padding: 30px 40px;
+	}
+}
+
+input {
+	margin: 10px;
+	text-shadow: 1px 1px 0.5px #708090;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	display: inline-block;
+}

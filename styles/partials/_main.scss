@@ -1,0 +1,157 @@
+.movie {
+	background-image: url(../assets/cocktail2.png);
+	background-repeat: space;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-child {
+	display: inline;
+	@include respond-to(medium) {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+}
+
+.movie__container,
+.icons__container,
+.activities__container,
+.desserts__container,
+.result__container {
+	padding: 70px;
+	background: #fff;
+	border-radius: 20px;
+	text-align: center;
+	@include respond-to(medium) {
+		padding: 35px;
+	}
+	@include respond-to(small) {
+		padding: 5px;
+	}
+}
+
+.movie__container {
+	border: 3px solid $movieColour;
+}
+
+.movie h2 {
+	color: $movieColour;
+}
+
+.movie a input {
+	border: 1.5px solid $movieColour;
+	box-shadow: 0 2px $movieColour;
+	color: $movieColour;
+}
+
+.movie a input:hover {
+	box-shadow: 0 1px $movieColour;
+}
+
+.icons {
+	background-image: url(../assets/cocktail3.png);
+	background-repeat: space;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.icons__container {
+	border: 3px solid $iconsColour;
+}
+
+.icons h2 {
+	color: $iconsColour;
+}
+
+.icons a input {
+	border: 1.5px solid $iconsColour;
+	box-shadow: 0 2px $iconsColour;
+	color: $iconsColour;
+}
+
+.icons a input:hover {
+	box-shadow: 0 1px $iconsColour;
+
+}
+
+.activities {
+	background-image: url(../assets/cocktail4.png);
+	background-repeat: space;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.activities__container {
+	border: 3px solid $activitiesColour;
+}
+
+.activities h2 {
+	color: $activitiesColour;
+}
+
+.activities a input {
+	border: 1.5px solid $activitiesColour;
+	box-shadow: 0 2px $activitiesColour;
+	color: $activitiesColour;
+}
+
+.activities a input:hover {
+	box-shadow: 0 1px $activitiesColour;
+}
+
+.desserts {
+	background-image: url(../assets/cocktail5.png);
+	background-repeat: space;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.desserts__container {
+	border: 3px solid $dessertsColour;
+}
+
+.desserts h2 {
+	color: $dessertsColour;
+}
+
+.desserts a input {
+	border: 1.5px solid $dessertsColour;
+	box-shadow: 0 2px $dessertsColour;
+	color: $dessertsColour;
+}
+
+.dessert a input:hover {
+	box-shadow: 0 1px $dessertsColour;
+}
+
+a input {
+	margin-top: 15px;
+	text-transform: uppercase;
+	letter-spacing: 1.4px;
+	padding: 15px 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	position: relative;
+	outline: none;
+}
+
+a input:hover{
+	top: 2px;
+}
+
+label {
+	margin-left: 20px;
+	font-family: $headingFont;
+	letter-spacing: 1.2px;
+	line-height: 40px;
+	@include respond-to(small) {
+		font-size: 12px;
+		text-align: left;
+	}
+}
+
