@@ -13,7 +13,7 @@ header {
 	margin: 0 auto;
 	padding: 70px;
 	background: #fff;
-	border: 3px solid $headerColour;
+	border: 5px solid $headerColour;
 	border-radius: 20px;
 	text-align: center;
 	@include respond-to(medium) {
@@ -23,7 +23,6 @@ header {
 
 h1 {
     color: $headerColour;
-    text-shadow: 2px 2px 1px #708090;
     @include respond-to(small) {
     	font-size: 35px;
     }
@@ -35,12 +34,11 @@ button {
 	letter-spacing: 1.4px;
 	padding: 15px 30px;
 	background-color: #fff;
-	border: 1.5px solid $headerColour;
+	border: 2.5px solid $headerColour;
 	border-radius: 10px;
 	box-shadow: 0 2px $headerColour;
 	position: relative;
 	color: $headerColour;
-	text-shadow: 1px 1px 0.5px #708090;
 	outline: none;
 }
 

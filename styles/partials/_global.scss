@@ -27,7 +27,6 @@ h1 {
 
 h2 {
 	@include heading(35px);
-	text-shadow: 1px 1px 0.5px #708090;
 	@include respond-to(small) {
 		font-size: 30px;
 	}
@@ -46,7 +45,6 @@ fieldset {
 
 input {
 	margin: 10px;
-	text-shadow: 1px 1px 0.5px #708090;
 }
 
 img {

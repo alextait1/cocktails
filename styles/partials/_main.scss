@@ -1,3 +1,20 @@
+fieldset {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	margin: 0 auto;
+	@include respond-to(small) {
+		width: 100%;
+		margin: 0;
+	}
+}
+
+label {
+	@include respond-to(small) {
+		margin-left: 0;
+	}
+}
+
 .movie {
 	background-image: url(../assets/cocktail2.png);
 	background-repeat: space;
@@ -7,7 +24,10 @@
 }
 
 .flex-child {
-	display: inline;
+	// display: inline;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 	@include respond-to(medium) {
 		display: flex;
 		justify-content: space-between;
@@ -33,7 +53,7 @@
 }
 
 .movie__container {
-	border: 3px solid $movieColour;
+	border: 5px solid $movieColour;
 }
 
 .movie h2 {
@@ -59,7 +79,7 @@
 }
 
 .icons__container {
-	border: 3px solid $iconsColour;
+	border: 5px solid $iconsColour;
 }
 
 .icons h2 {
@@ -86,7 +106,7 @@
 }
 
 .activities__container {
-	border: 3px solid $activitiesColour;
+	border: 5px solid $activitiesColour;
 }
 
 .activities h2 {
@@ -112,7 +132,7 @@
 }
 
 .desserts__container {
-	border: 3px solid $dessertsColour;
+	border: 5px solid $dessertsColour;
 }
 
 .desserts h2 {
